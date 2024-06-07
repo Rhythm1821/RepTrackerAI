@@ -18,7 +18,7 @@ git clone https://github.com/Rhythm1821/RepTrackerAI
 2. Navigate to the project directory:
 
 ```
-cd RepTracker
+cd RepTrackerAI
 ```
 
 3. Create a virtual environment:
@@ -49,11 +49,11 @@ cd exercise
 8. For Bicep Curls
 
 ```
-python3 bicepcurls.py # for bicep curls
+python3 bicepcurls.py
 ```
 
 
 9. For Squats
 ```
-python3 squats.py # for squats
+python3 squats.py
 ```
