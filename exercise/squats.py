@@ -1,6 +1,5 @@
 import mediapipe as mp
 import cv2
-from utils import calculate_angle, mp_drawing,mp_pose
 import numpy as np
 
 cap = cv2.VideoCapture(0)
@@ -8,6 +7,21 @@ cap = cv2.VideoCapture(0)
 # squat counter variables
 counter = 0
 stage = None
+
+mp_drawing = mp.solutions.drawing_utils
+mp_pose = mp.solutions.pose
+def calculate_angle(a,b,c):
+    a = np.array(a)
+    b = np.array(b)
+    c = np.array(c)
+
+    radians = np.arctan2(c[1]-b[1],c[0]-b[0]) - np.arctan2(a[1]-b[1],a[0]-b[0])
+    angle = np.abs(radians*180/np.pi)
+
+    if angle>180.0:
+        angle = 360-angle
+
+    return angle
 
 # Setup mediapipe instance
 with mp_pose.Pose(min_detection_confidence=0.5,min_tracking_confidence=0.5) as pose:
