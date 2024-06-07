@@ -1,5 +1,12 @@
 # RepTrackerAI
 
+## Overview
+### RepTrackerAI
+
+**RepTrackerAI** is an innovative fitness application designed to enhance your workout experience by leveraging machine learning technology. This project accurately tracks and counts repetitions of exercises, starting with bicep curls and squats. By using computer vision and pose estimation, RepTrackerAI provides real-time rep counting and tracking.
+
+Note: Come inside the frame so that the model can detect the repititions of your exercise
+
 ### Installation
 
 1. Clone the repository:
@@ -38,7 +45,6 @@ pip install -r requirements.txt
 cd exercise
 ```
 
-7. For the exercise, come in the frame in so that the model can detect the repititions:
 
 8. For Bicep Curls
 
